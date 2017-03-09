@@ -1,0 +1,22 @@
+{
+  "name": "spa-workshop-2",
+  "authors": [
+    "leolabs <admin@leolabs.org>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "2.0.0-rc.2",
+    "iron-input": "2.0-preview",
+    "paper-input": "2.0-preview"
+  }
+}

@@ -1,0 +1,38 @@
+<link rel="import" href="bower_components/polymer/polymer-element.html">
+<link rel="import" href="bower_components/paper-input/paper-input.html">
+
+<dom-module id="my-counter">
+    <template>
+        <span>Counter: [[counter]]</span>
+        <paper-input value="{{counter}}" label="Counter"></paper-input>
+        <button on-click="increment">Increment</button>
+        <button on-click="decrement">Decrement</button>
+    </template>
+</dom-module>
+
+<script>
+    class MyCounter extends Polymer.Element {
+        static get is() { return 'my-counter'; }
+
+        static get properties() {
+            return {
+                counter: {
+                    type: Number,
+                    value: 0
+                }
+            }
+        }
+
+        increment()
+        {
+            this.counter++;
+        }
+
+        decrement()
+        {
+            this.counter--;
+        }
+    }
+
+    customElements.define(MyCounter.is, MyCounter);
+</script>
